@@ -7,4 +7,5 @@ You can copy `clock.ino` file and use it to make your own digital clock.
 * Arduino Uno
 * 2x16 LCD and Keypad Shield
 
-
+## Photo 
+![Clock](https://github.com/prp-e/hackable-clock/blob/master/pic.jpg)
