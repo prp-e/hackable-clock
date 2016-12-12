@@ -2,8 +2,8 @@
 LiquidCrystal lcd(8, 9, 4, 5, 6, 7);
 
 int sec = 0;  
-int minute = 48; 
-int hour = 16; 
+int minute = 43; 
+int hour = 21; 
 
 void setup() {
   lcd.begin(16, 2);
@@ -13,13 +13,13 @@ void setup() {
 void loop() {
  lcd.setCursor(0, 1);
  lcd.print(" ");
- if(hour > 23){
+ if(hour == 23){
   hour = 0; 
  }
  lcd.print(hour);
  lcd.print(" : ");
   lcd.print(minute);
- if(minute > 59){
+ if(minute == 59){
   minute = 0; 
   hour += 1;
  }
@@ -27,7 +27,7 @@ void loop() {
  lcd.print(sec);
  delay(1000);
  sec += 1;
- if(sec > 59){
+ if(sec == 59){
   sec = 0; 
   minute += 1;
  }
