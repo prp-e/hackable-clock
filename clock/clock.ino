@@ -13,7 +13,7 @@ void setup() {
 void loop() {
  lcd.setCursor(0, 1);
  lcd.print(" ");
- if(hour == 23){
+ if(hour > 23){
   hour = 0; 
  }
  lcd.print(hour);
